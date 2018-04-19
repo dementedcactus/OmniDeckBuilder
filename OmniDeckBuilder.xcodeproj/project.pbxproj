@@ -11,6 +11,25 @@
 		AE706A47FDB8F6C4B95CBBCC /* Pods_OmniDeckBuilder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090656102614CD29D38A19DB /* Pods_OmniDeckBuilder.framework */; };
 		DB491F6E2089405B000DC368 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB491F6D2089405B000DC368 /* LoginVC.swift */; };
 		DB491F702089418A000DC368 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB491F6F20894189000DC368 /* GoogleService-Info.plist */; };
+		DB491F72208947F7000DC368 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB491F71208947F7000DC368 /* LoginView.swift */; };
+		DB5C6F8820894AC50092B358 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F8720894AC50092B358 /* Alert.swift */; };
+		DB5C6F8B20894B2F0092B358 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F8A20894B2F0092B358 /* NetworkConnectivity.swift */; };
+		DB5C6F8D20894B690092B358 /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F8C20894B690092B358 /* StyleSheet.swift */; };
+		DB5C6F8F20894DE60092B358 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F8E20894DE60092B358 /* CreateAccountVC.swift */; };
+		DB5C6F9120894E3D0092B358 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F9020894E3D0092B358 /* CreateAccountView.swift */; };
+		DB5C6F9B20894FFD0092B358 /* AuthUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F9920894FFD0092B358 /* AuthUserService.swift */; };
+		DB5C6F9C20894FFD0092B358 /* AuthUserServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F9A20894FFD0092B358 /* AuthUserServiceDelegate.swift */; };
+		DB5C6F9E2089500F0092B358 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F9D2089500F0092B358 /* StorageService.swift */; };
+		DB5C6FA3208950210092B358 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F9F208950210092B358 /* DatabaseService.swift */; };
+		DB5C6FA4208950210092B358 /* DatabaseService+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6FA0208950210092B358 /* DatabaseService+Add.swift */; };
+		DB5C6FA5208950210092B358 /* DatabaseService+Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6FA1208950210092B358 /* DatabaseService+Get.swift */; };
+		DB5C6FA6208950210092B358 /* DatabaseServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6FA2208950210092B358 /* DatabaseServiceDelegate.swift */; };
+		DB5C6FAA208951740092B358 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6FA9208951740092B358 /* UserProfile.swift */; };
+		DB5C6FAC208953E60092B358 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6FAB208953E60092B358 /* TabBarVC.swift */; };
+		DB5C6FAE208954600092B358 /* MainFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6FAD208954600092B358 /* MainFeedVC.swift */; };
+		DB5C6FB0208954BA0092B358 /* MainFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6FAF208954BA0092B358 /* MainFeedView.swift */; };
+		DB5C6FB22089553B0092B358 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6FB12089553B0092B358 /* UploadVC.swift */; };
+		DB5C6FB42089554F0092B358 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6FB32089554F0092B358 /* UploadView.swift */; };
 		DB917D38208687C90042BF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB917D37208687C90042BF0E /* AppDelegate.swift */; };
 		DB917D3F208687CA0042BF0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB917D3E208687CA0042BF0E /* Assets.xcassets */; };
 		DB917D42208687CA0042BF0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB917D40208687CA0042BF0E /* LaunchScreen.storyboard */; };
@@ -36,6 +55,25 @@
 		D3D24F5CF1CC155069969C8D /* Pods-OmniDeckBuilderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmniDeckBuilderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmniDeckBuilderTests/Pods-OmniDeckBuilderTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB491F6D2089405B000DC368 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DB491F6F20894189000DC368 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB491F71208947F7000DC368 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DB5C6F8720894AC50092B358 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		DB5C6F8A20894B2F0092B358 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivity.swift; sourceTree = "<group>"; };
+		DB5C6F8C20894B690092B358 /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
+		DB5C6F8E20894DE60092B358 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		DB5C6F9020894E3D0092B358 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		DB5C6F9920894FFD0092B358 /* AuthUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthUserService.swift; path = OmniDeckBuilder/Services/AuthUserService.swift; sourceTree = SOURCE_ROOT; };
+		DB5C6F9A20894FFD0092B358 /* AuthUserServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthUserServiceDelegate.swift; path = OmniDeckBuilder/Services/AuthUserServiceDelegate.swift; sourceTree = SOURCE_ROOT; };
+		DB5C6F9D2089500F0092B358 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageService.swift; path = OmniDeckBuilder/Services/StorageService.swift; sourceTree = SOURCE_ROOT; };
+		DB5C6F9F208950210092B358 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		DB5C6FA0208950210092B358 /* DatabaseService+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseService+Add.swift"; sourceTree = "<group>"; };
+		DB5C6FA1208950210092B358 /* DatabaseService+Get.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseService+Get.swift"; sourceTree = "<group>"; };
+		DB5C6FA2208950210092B358 /* DatabaseServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseServiceDelegate.swift; sourceTree = "<group>"; };
+		DB5C6FA9208951740092B358 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		DB5C6FAB208953E60092B358 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		DB5C6FAD208954600092B358 /* MainFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedVC.swift; sourceTree = "<group>"; };
+		DB5C6FAF208954BA0092B358 /* MainFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedView.swift; sourceTree = "<group>"; };
+		DB5C6FB12089553B0092B358 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
+		DB5C6FB32089554F0092B358 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		DB917D34208687C90042BF0E /* OmniDeckBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmniDeckBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB917D37208687C90042BF0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB917D3E208687CA0042BF0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +113,78 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB491F732089480E000DC368 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C6F8E20894DE60092B358 /* CreateAccountVC.swift */,
+				DB491F6D2089405B000DC368 /* LoginVC.swift */,
+				DB5C6FAD208954600092B358 /* MainFeedVC.swift */,
+				DB5C6FAB208953E60092B358 /* TabBarVC.swift */,
+				DB5C6FB12089553B0092B358 /* UploadVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB491F742089481D000DC368 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C6F9020894E3D0092B358 /* CreateAccountView.swift */,
+				DB491F71208947F7000DC368 /* LoginView.swift */,
+				DB5C6FAF208954BA0092B358 /* MainFeedView.swift */,
+				DB5C6FB32089554F0092B358 /* UploadView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB5C6F8920894ACB0092B358 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C6F8720894AC50092B358 /* Alert.swift */,
+				DB5C6F9320894EFA0092B358 /* AuthUser */,
+				DB5C6FA7208950290092B358 /* Database */,
+				DB5C6F8A20894B2F0092B358 /* NetworkConnectivity.swift */,
+				DB5C6F9220894EF10092B358 /* Storage */,
+				DB5C6F8C20894B690092B358 /* StyleSheet.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DB5C6F9220894EF10092B358 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C6F9D2089500F0092B358 /* StorageService.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		DB5C6F9320894EFA0092B358 /* AuthUser */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C6F9920894FFD0092B358 /* AuthUserService.swift */,
+				DB5C6F9A20894FFD0092B358 /* AuthUserServiceDelegate.swift */,
+			);
+			path = AuthUser;
+			sourceTree = "<group>";
+		};
+		DB5C6FA7208950290092B358 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C6F9F208950210092B358 /* DatabaseService.swift */,
+				DB5C6FA0208950210092B358 /* DatabaseService+Add.swift */,
+				DB5C6FA1208950210092B358 /* DatabaseService+Get.swift */,
+				DB5C6FA2208950210092B358 /* DatabaseServiceDelegate.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		DB5C6FA8208951570092B358 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB5C6FA9208951740092B358 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DB917D2B208687C90042BF0E = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +213,10 @@
 				DB917D40208687CA0042BF0E /* LaunchScreen.storyboard */,
 				DB917D43208687CA0042BF0E /* Info.plist */,
 				DB491F6F20894189000DC368 /* GoogleService-Info.plist */,
-				DB491F6D2089405B000DC368 /* LoginVC.swift */,
+				DB491F732089480E000DC368 /* ViewControllers */,
+				DB491F742089481D000DC368 /* Views */,
+				DB5C6FA8208951570092B358 /* Models */,
+				DB5C6F8920894ACB0092B358 /* Services */,
 			);
 			path = OmniDeckBuilder;
 			sourceTree = "<group>";
@@ -235,20 +348,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OmniDeckBuilder/Pods-OmniDeckBuilder-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Toucan/Toucan.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toucan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -301,8 +410,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB491F72208947F7000DC368 /* LoginView.swift in Sources */,
+				DB5C6F9C20894FFD0092B358 /* AuthUserServiceDelegate.swift in Sources */,
+				DB5C6F8B20894B2F0092B358 /* NetworkConnectivity.swift in Sources */,
+				DB5C6FB22089553B0092B358 /* UploadVC.swift in Sources */,
+				DB5C6FA5208950210092B358 /* DatabaseService+Get.swift in Sources */,
+				DB5C6FA6208950210092B358 /* DatabaseServiceDelegate.swift in Sources */,
 				DB491F6E2089405B000DC368 /* LoginVC.swift in Sources */,
+				DB5C6F9B20894FFD0092B358 /* AuthUserService.swift in Sources */,
+				DB5C6F8820894AC50092B358 /* Alert.swift in Sources */,
+				DB5C6FA3208950210092B358 /* DatabaseService.swift in Sources */,
+				DB5C6F8F20894DE60092B358 /* CreateAccountVC.swift in Sources */,
 				DB917D38208687C90042BF0E /* AppDelegate.swift in Sources */,
+				DB5C6FAE208954600092B358 /* MainFeedVC.swift in Sources */,
+				DB5C6FB0208954BA0092B358 /* MainFeedView.swift in Sources */,
+				DB5C6F9120894E3D0092B358 /* CreateAccountView.swift in Sources */,
+				DB5C6FAA208951740092B358 /* UserProfile.swift in Sources */,
+				DB5C6F9E2089500F0092B358 /* StorageService.swift in Sources */,
+				DB5C6FAC208953E60092B358 /* TabBarVC.swift in Sources */,
+				DB5C6FB42089554F0092B358 /* UploadView.swift in Sources */,
+				DB5C6F8D20894B690092B358 /* StyleSheet.swift in Sources */,
+				DB5C6FA4208950210092B358 /* DatabaseService+Add.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +585,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OmniDeckBuilder/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = RC.OmniDeckBuilder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -472,7 +603,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OmniDeckBuilder/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = RC.OmniDeckBuilder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -488,7 +622,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OmniDeckBuilderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = RC.OmniDeckBuilderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -505,7 +643,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OmniDeckBuilderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = RC.OmniDeckBuilderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

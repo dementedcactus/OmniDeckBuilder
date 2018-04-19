@@ -11,8 +11,6 @@ target 'OmniDeckBuilder' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-  pod 'Alamofire'
-  pod 'Kingfisher'
   pod 'Toucan'
 
   target 'OmniDeckBuilderTests' do

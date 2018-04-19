@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BC2EE996C447343FD49FA9A2B6F92708"
+               BlueprintIdentifier = "334C5956677786CE9868369B2168C2B5"
                BuildableName = "Pods_OmniDeckBuilder.framework"
                BlueprintName = "Pods-OmniDeckBuilder"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BC2EE996C447343FD49FA9A2B6F92708"
+            BlueprintIdentifier = "334C5956677786CE9868369B2168C2B5"
             BuildableName = "Pods_OmniDeckBuilder.framework"
             BlueprintName = "Pods-OmniDeckBuilder"
             ReferencedContainer = "container:Pods.xcodeproj">
