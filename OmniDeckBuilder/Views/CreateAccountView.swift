@@ -71,56 +71,52 @@ class CreateAccountView: UIView {
     
     private func commonInit() {
         backgroundColor = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 1.00)
-        setupObjects()
-        setupViews()
+        setupObjectsAndViews()
     }
     
-    private func setupObjects() {
-        self.addSubview(createAccountLabel)
-        self.addSubview(usernameTextField)
-        self.addSubview(passwordTextField)
-        self.addSubview(emailTextField)
-        self.addSubview(statusLabel)
-        self.addSubview(createAccountButton)
+    private func setupObjectsAndViews() {
+//        self.addSubview(createAccountLabel)
+//        self.addSubview(usernameTextField)
+//        self.addSubview(passwordTextField)
+//        self.addSubview(emailTextField)
+//        self.addSubview(statusLabel)
+//        self.addSubview(createAccountButton)
     }
+        
+//        createAccountLabel.snp.makeConstraints { (make) in
+//            make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(20)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//        }
+//        
+//        usernameTextField.snp.makeConstraints { (make) in
+//            make.top.equalTo(self.createAccountLabel.snp.bottom).offset(20)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(Stylesheet.ConstraintSizes.TextfieldWidthMult)
+//            make.height.equalTo(Stylesheet.ConstraintSizes.TextfieldHeight)
+//        }
+//        
+//        
+//        emailTextField.snp.makeConstraints { (make) in
+//            make.top.equalTo(usernameTextField.snp.bottom).offset(20)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(Stylesheet.ConstraintSizes.TextfieldWidthMult)
+//            make.height.equalTo(Stylesheet.ConstraintSizes.TextfieldHeight)
+//        }
+//        
+//        passwordTextField.snp.makeConstraints { (make) in
+//            make.top.equalTo(emailTextField.snp.bottom).offset(20)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(Stylesheet.ConstraintSizes.TextfieldWidthMult)
+//            make.height.equalTo(Stylesheet.ConstraintSizes.TextfieldHeight)
+//        }
+//        
+//        createAccountButton.snp.makeConstraints { (make) in
+//            make.top.equalTo(passwordTextField.snp.bottom).offset(20)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(Stylesheet.ConstraintSizes.ButtonWidthMult)
+//            make.height.equalTo(self.safeAreaLayoutGuide.snp.height).multipliedBy(Stylesheet.ConstraintSizes.ButtonHeightMult)
+//        }
+        
     
-    private func setupViews() {
-        
-        createAccountLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(20)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-        }
-        
-        usernameTextField.snp.makeConstraints { (make) in
-            make.top.equalTo(self.createAccountLabel.snp.bottom).offset(20)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(Stylesheet.ConstraintSizes.TextfieldWidthMult)
-            make.height.equalTo(Stylesheet.ConstraintSizes.TextfieldHeight)
-        }
-        
-        
-        emailTextField.snp.makeConstraints { (make) in
-            make.top.equalTo(usernameTextField.snp.bottom).offset(20)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(Stylesheet.ConstraintSizes.TextfieldWidthMult)
-            make.height.equalTo(Stylesheet.ConstraintSizes.TextfieldHeight)
-        }
-        
-        passwordTextField.snp.makeConstraints { (make) in
-            make.top.equalTo(emailTextField.snp.bottom).offset(20)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(Stylesheet.ConstraintSizes.TextfieldWidthMult)
-            make.height.equalTo(Stylesheet.ConstraintSizes.TextfieldHeight)
-        }
-        
-        createAccountButton.snp.makeConstraints { (make) in
-            make.top.equalTo(passwordTextField.snp.bottom).offset(20)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(Stylesheet.ConstraintSizes.ButtonWidthMult)
-            make.height.equalTo(self.safeAreaLayoutGuide.snp.height).multipliedBy(Stylesheet.ConstraintSizes.ButtonHeightMult)
-        }
-        
-        
-    }
 
 }

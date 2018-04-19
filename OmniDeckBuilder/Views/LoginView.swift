@@ -157,95 +157,93 @@ class LoginView: UIView {
     
     private func commonInit() {
         backgroundColor = .white
-        setupObjects()
-        setupViews()
+        setupObjectsAndViews()
     }
     
-    private func setupObjects() {
-        addSubview(loginImageView)
-        addSubview(titleLabel)
-        addSubview(facebookSignInButton)
-        addSubview(twitterSignInButton)
-        addSubview(emailIconImageView)
-        addSubview(emailTextField)
-        addSubview(passwordIconImageView)
-        addSubview(passwordTextField)
-        addSubview(signInButton)
-        addSubview(createAccountButton)
-        addSubview(forgotPasswordButton)
+    private func setupObjectsAndViews() {
+//        addSubview(loginImageView)
+//        addSubview(titleLabel)
+//        addSubview(facebookSignInButton)
+//        addSubview(twitterSignInButton)
+//        addSubview(emailIconImageView)
+//        addSubview(emailTextField)
+//        addSubview(passwordIconImageView)
+//        addSubview(passwordTextField)
+//        addSubview(signInButton)
+//        addSubview(createAccountButton)
+//        addSubview(forgotPasswordButton)
     }
     
-    private func setupViews() {
-        loginImageView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.safeAreaLayoutGuide.snp.edges)
-        }
-        
-        titleLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(20)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(0.9)
-        }
-        
-        facebookSignInButton.snp.makeConstraints { (make) in
-            make.centerY.equalTo(self.safeAreaLayoutGuide.snp.centerY).multipliedBy(1.8)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(0.8)
-            make.height.equalTo(self.safeAreaLayoutGuide.snp.height).multipliedBy(0.08)
-        }
-        
-        twitterSignInButton.snp.makeConstraints { (make) in
-            make.bottom.equalTo(facebookSignInButton.snp.top).offset(-10)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.width.height.equalTo(facebookSignInButton)
-        }
-        
-        emailIconImageView.snp.makeConstraints { (make) in
-            make.top.equalTo(titleLabel.snp.bottom).offset(20)
-            make.leading.equalTo(self.safeAreaLayoutGuide.snp.leading).offset(40)
-            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(0.1)
-            make.height.equalTo(emailIconImageView.snp.width)
-        }
-        
-        passwordIconImageView.snp.makeConstraints { (make) in
-            make.top.equalTo(emailIconImageView.snp.bottom).offset(5)
-            make.leading.equalTo(emailIconImageView)
-            make.width.equalTo(emailIconImageView)
-            make.height.equalTo(emailIconImageView)
-        }
-        
-        emailTextField.snp.makeConstraints { (make) in
-            make.top.equalTo(emailIconImageView)
-            make.leading.equalTo(emailIconImageView.snp.trailing)
-            make.trailing.equalTo(self.safeAreaLayoutGuide.snp.trailing).offset(-40)
-            make.height.equalTo(emailIconImageView)
-        }
-        
-        passwordTextField.snp.makeConstraints { (make) in
-            make.top.equalTo(passwordIconImageView)
-            make.leading.equalTo(passwordIconImageView.snp.trailing)
-            make.trailing.equalTo(self.safeAreaLayoutGuide.snp.trailing).offset(-40)
-            make.height.equalTo(passwordIconImageView)
-        }
-        
-        signInButton.snp.makeConstraints { (make) in
-            make.top.equalTo(passwordIconImageView.snp.bottom).offset(10)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.leading.equalTo(passwordIconImageView.snp.leading)
-            make.trailing.equalTo(passwordTextField.snp.trailing)
-        }
-        
-        createAccountButton.snp.makeConstraints { (make) in
-            make.top.equalTo(signInButton.snp.bottom).offset(10)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.width.equalTo(signInButton.snp.width)
-        }
-        
-        forgotPasswordButton.snp.makeConstraints { (make) in
-            make.top.equalTo(createAccountButton.snp.bottom).offset(10)
-            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-            make.width.equalTo(signInButton.snp.width)
-        }
-        
-    }
+//        loginImageView.snp.makeConstraints { (make) in
+//            make.edges.equalTo(self.safeAreaLayoutGuide.snp.edges)
+//        }
+//
+//        titleLabel.snp.makeConstraints { (make) in
+//            make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(20)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(0.9)
+//        }
+//
+//        facebookSignInButton.snp.makeConstraints { (make) in
+//            make.centerY.equalTo(self.safeAreaLayoutGuide.snp.centerY).multipliedBy(1.8)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(0.8)
+//            make.height.equalTo(self.safeAreaLayoutGuide.snp.height).multipliedBy(0.08)
+//        }
+//
+//        twitterSignInButton.snp.makeConstraints { (make) in
+//            make.bottom.equalTo(facebookSignInButton.snp.top).offset(-10)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.width.height.equalTo(facebookSignInButton)
+//        }
+//
+//        emailIconImageView.snp.makeConstraints { (make) in
+//            make.top.equalTo(titleLabel.snp.bottom).offset(20)
+//            make.leading.equalTo(self.safeAreaLayoutGuide.snp.leading).offset(40)
+//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(0.1)
+//            make.height.equalTo(emailIconImageView.snp.width)
+//        }
+//
+//        passwordIconImageView.snp.makeConstraints { (make) in
+//            make.top.equalTo(emailIconImageView.snp.bottom).offset(5)
+//            make.leading.equalTo(emailIconImageView)
+//            make.width.equalTo(emailIconImageView)
+//            make.height.equalTo(emailIconImageView)
+//        }
+//
+//        emailTextField.snp.makeConstraints { (make) in
+//            make.top.equalTo(emailIconImageView)
+//            make.leading.equalTo(emailIconImageView.snp.trailing)
+//            make.trailing.equalTo(self.safeAreaLayoutGuide.snp.trailing).offset(-40)
+//            make.height.equalTo(emailIconImageView)
+//        }
+//
+//        passwordTextField.snp.makeConstraints { (make) in
+//            make.top.equalTo(passwordIconImageView)
+//            make.leading.equalTo(passwordIconImageView.snp.trailing)
+//            make.trailing.equalTo(self.safeAreaLayoutGuide.snp.trailing).offset(-40)
+//            make.height.equalTo(passwordIconImageView)
+//        }
+//
+//        signInButton.snp.makeConstraints { (make) in
+//            make.top.equalTo(passwordIconImageView.snp.bottom).offset(10)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.leading.equalTo(passwordIconImageView.snp.leading)
+//            make.trailing.equalTo(passwordTextField.snp.trailing)
+//        }
+//
+//        createAccountButton.snp.makeConstraints { (make) in
+//            make.top.equalTo(signInButton.snp.bottom).offset(10)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.width.equalTo(signInButton.snp.width)
+//        }
+//
+//        forgotPasswordButton.snp.makeConstraints { (make) in
+//            make.top.equalTo(createAccountButton.snp.bottom).offset(10)
+//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
+//            make.width.equalTo(signInButton.snp.width)
+//        }
+//
+
 
 }
