@@ -1,0 +1,6 @@
+framework module Pods_OmniDeckBuilder {
+  umbrella header "Pods-OmniDeckBuilder-umbrella.h"
+
+  export *
+  module * { export * }
+}
