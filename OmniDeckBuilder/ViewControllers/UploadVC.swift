@@ -24,6 +24,9 @@ class UploadVC: UIViewController {
         navigationItem.title = "New Post"
         
     }
-    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 
 }

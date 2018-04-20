@@ -161,17 +161,62 @@ class LoginView: UIView {
     }
     
     private func setupObjectsAndViews() {
-//        addSubview(loginImageView)
-//        addSubview(titleLabel)
-//        addSubview(facebookSignInButton)
-//        addSubview(twitterSignInButton)
-//        addSubview(emailIconImageView)
-//        addSubview(emailTextField)
-//        addSubview(passwordIconImageView)
-//        addSubview(passwordTextField)
-//        addSubview(signInButton)
-//        addSubview(createAccountButton)
-//        addSubview(forgotPasswordButton)
+        setupLoginImageView()
+        setupTitleLabel()
+        setupFacebookSignInButton()
+        setupTwitterSignInButton()
+        setupEmailIconImageView()
+        setupEmailTextField()
+        setupPasswordIconImageView()
+        setupPasswordTextField()
+        setupSignInButton()
+        setupCreateAccountButton()
+        setupForgotPasswordButton()
+    }
+    
+    private func setupLoginImageView() {
+        //        addSubview(loginImageView)
+        
+    }
+    private func setupTitleLabel() {
+        //        addSubview(titleLabel)
+        
+    }
+    private func setupFacebookSignInButton() {
+        //        addSubview(facebookSignInButton)
+        
+    }
+    private func setupTwitterSignInButton() {
+        //        addSubview(twitterSignInButton)
+        
+    }
+    private func setupEmailIconImageView() {
+        //        addSubview(emailIconImageView)
+        
+    }
+    private func setupEmailTextField() {
+        //        addSubview(emailTextField)
+        
+    }
+    private func setupPasswordIconImageView() {
+        //        addSubview(passwordIconImageView)
+        
+    }
+    private func setupPasswordTextField() {
+        //        addSubview(passwordTextField)
+        
+    }
+    private func setupSignInButton() {
+        //        addSubview(signInButton)
+        
+    }
+    private func setupCreateAccountButton() {
+        //        addSubview(createAccountButton)
+        
+    }
+    private func setupForgotPasswordButton() {
+        //        addSubview(forgotPasswordButton)
+        
     }
     
 //        loginImageView.snp.makeConstraints { (make) in

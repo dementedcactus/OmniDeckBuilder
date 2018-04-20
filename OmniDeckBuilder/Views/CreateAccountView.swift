@@ -75,12 +75,36 @@ class CreateAccountView: UIView {
     }
     
     private func setupObjectsAndViews() {
-//        self.addSubview(createAccountLabel)
-//        self.addSubview(usernameTextField)
-//        self.addSubview(passwordTextField)
-//        self.addSubview(emailTextField)
-//        self.addSubview(statusLabel)
-//        self.addSubview(createAccountButton)
+        setupCreateAccountLabel()
+        setupEmailTextField()
+        setupUsernameTextField()
+        setupPasswordTextField()
+        setupStatusLabel()
+        setupCreateAccountButton()
+    }
+    private func setupCreateAccountLabel() {
+        //        self.addSubview(createAccountLabel)
+        
+    }
+    private func setupUsernameTextField() {
+        //        self.addSubview(usernameTextField)
+
+    }
+    private func setupPasswordTextField() {
+        //        self.addSubview(passwordTextField)
+        
+    }
+    private func setupEmailTextField() {
+        //        self.addSubview(emailTextField)
+        
+    }
+    private func setupStatusLabel() {
+        //        self.addSubview(statusLabel)
+        
+    }
+    private func setupCreateAccountButton() {
+        //        self.addSubview(createAccountButton)
+        
     }
         
 //        createAccountLabel.snp.makeConstraints { (make) in

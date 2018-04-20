@@ -30,6 +30,11 @@ class LoginVC: UIViewController {
         animateView()
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     private func animateView() {
         UIView.animate(withDuration: 2) {
             self.loginView.titleLabel.alpha = 1

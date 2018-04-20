@@ -11,12 +11,10 @@ import UIKit
 class MainFeedVC: UIViewController {
 
     let mainFeedView = MainFeedView()
-    //let emptyView = EmptyStateView(emptyText: "No posts.\nAdd a new post, or check your internet and restart the app.")
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

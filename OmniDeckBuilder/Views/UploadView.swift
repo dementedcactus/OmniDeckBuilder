@@ -21,11 +21,12 @@ class UploadView: UIView {
     }
     
     private func commonInit() {
-        backgroundColor = .white
+        backgroundColor = .purple
         setupViews()
     }
     
     private func setupViews() {
+        
     }
 
 }
