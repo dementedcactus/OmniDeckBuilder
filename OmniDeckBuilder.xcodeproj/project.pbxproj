@@ -12,6 +12,8 @@
 		DB491F6E2089405B000DC368 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB491F6D2089405B000DC368 /* LoginVC.swift */; };
 		DB491F702089418A000DC368 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB491F6F20894189000DC368 /* GoogleService-Info.plist */; };
 		DB491F72208947F7000DC368 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB491F71208947F7000DC368 /* LoginView.swift */; };
+		DB5204A22092614B007F0A8C /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5204A12092614B007F0A8C /* NetworkHelper.swift */; };
+		DB5204A420926169007F0A8C /* ImageAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5204A320926169007F0A8C /* ImageAPIHelper.swift */; };
 		DB5C6F8820894AC50092B358 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F8720894AC50092B358 /* Alert.swift */; };
 		DB5C6F8B20894B2F0092B358 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F8A20894B2F0092B358 /* NetworkConnectivity.swift */; };
 		DB5C6F8D20894B690092B358 /* StyleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5C6F8C20894B690092B358 /* StyleSheet.swift */; };
@@ -56,6 +58,8 @@
 		DB491F6D2089405B000DC368 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DB491F6F20894189000DC368 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB491F71208947F7000DC368 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DB5204A12092614B007F0A8C /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		DB5204A320926169007F0A8C /* ImageAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIHelper.swift; sourceTree = "<group>"; };
 		DB5C6F8720894AC50092B358 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		DB5C6F8A20894B2F0092B358 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivity.swift; sourceTree = "<group>"; };
 		DB5C6F8C20894B690092B358 /* StyleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSheet.swift; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				DB5C6F8720894AC50092B358 /* Alert.swift */,
+				DB5204A12092614B007F0A8C /* NetworkHelper.swift */,
+				DB5204A320926169007F0A8C /* ImageAPIHelper.swift */,
 				DB5C6F9320894EFA0092B358 /* AuthUser */,
 				DB5C6FA7208950290092B358 /* Database */,
 				DB5C6F8A20894B2F0092B358 /* NetworkConnectivity.swift */,
@@ -414,6 +420,7 @@
 				DB5C6F9C20894FFD0092B358 /* AuthUserServiceDelegate.swift in Sources */,
 				DB5C6F8B20894B2F0092B358 /* NetworkConnectivity.swift in Sources */,
 				DB5C6FB22089553B0092B358 /* UploadVC.swift in Sources */,
+				DB5204A22092614B007F0A8C /* NetworkHelper.swift in Sources */,
 				DB5C6FA5208950210092B358 /* DatabaseService+Get.swift in Sources */,
 				DB5C6FA6208950210092B358 /* DatabaseServiceDelegate.swift in Sources */,
 				DB491F6E2089405B000DC368 /* LoginVC.swift in Sources */,
@@ -430,6 +437,7 @@
 				DB5C6FAC208953E60092B358 /* TabBarVC.swift in Sources */,
 				DB5C6FB42089554F0092B358 /* UploadView.swift in Sources */,
 				DB5C6F8D20894B690092B358 /* StyleSheet.swift in Sources */,
+				DB5204A420926169007F0A8C /* ImageAPIHelper.swift in Sources */,
 				DB5C6FA4208950210092B358 /* DatabaseService+Add.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
