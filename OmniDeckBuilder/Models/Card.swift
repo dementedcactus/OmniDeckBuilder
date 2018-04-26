@@ -69,10 +69,7 @@ enum Color: String, Codable {
 
 struct LegalityElement: Codable {
     let format: Format?
-    let legality: LegalityEnum?
-}
-enum LegalityEnum: String, Codable {
-    case legal = "Legal"
+    let legality: String?
 }
 
 enum Format: String, Codable {
