@@ -17,37 +17,66 @@ public enum AppError: Error {
     case noInternet
     case notAnImage
     case other(rawError: Error)
+    case invalidImage
+    case goodStatusCode(num: Int)
+    case unauthenticated
+    case invalidJSONResponse
+    case couldNotParseJSON(rawError: Error)
+    case noInternetConnection
+    case noDataReceived
+    case codingError(rawError: Error)
+    case badStatusCode(num: Int)
+    case urlError(rawError: Error)
+}
+
+enum HTTPVerb: String {
+    case GET
+    case POST
 }
 
 class NetworkHelper {
-    private init () {}
+    private init() {}
     static let manager = NetworkHelper()
-    private let session = URLSession(configuration: .default)
+    let urlSession = URLSession(configuration: .default)
     
-    func performDataTask(with url: URL, completionHandler: @escaping (Data) -> Void, errorHandler: @escaping (Error) -> Void) {
-        session.dataTask(with: url) { (data, response, error) in
-            DispatchQueue.main.async{
-                if let error = error as? URLError {
-                    print(error)
-                    switch error {
-                    case URLError.notConnectedToInternet:
-                        errorHandler(AppError.noInternet)
-                    default:
-                        errorHandler(AppError.other(rawError: error))
-                    }
+    func performDataTask(with url: URLRequest, completionHandler: @escaping ((Data) -> Void), errorHandler: @escaping ((AppError) -> Void)) {
+        
+        self.urlSession.dataTask(with: url){(data: Data?, response: URLResponse?, error: Error?) in
+            DispatchQueue.main.async {
+                
+                guard let data = data else {
+                    errorHandler(AppError.noDataReceived)
                     return
                 }
-                
                 if let response = response as? HTTPURLResponse {
-                    if response.statusCode != 200 {
-                        print("Error: \(response.statusCode)")
-                        errorHandler(AppError.badResponseCode(code: response.statusCode))
+                    errorHandler(AppError.goodStatusCode(num: response.statusCode))
+                    //print(response.statusCode)
+                    //return
+                }
+                if let error = error as? URLError {
+                    switch error {
+                    case URLError.notConnectedToInternet:
+                        errorHandler(AppError.noInternetConnection)
+                        return
+                    default:
+                        errorHandler(AppError.urlError(rawError: error))
                     }
                 }
-                
-                if let data = data {
-                    completionHandler(data)
+                if let error = error {
+                    let error = error as NSError
+                    if error.domain == NSURLErrorDomain && error.code == NSURLErrorNotConnectedToInternet {
+                        errorHandler(AppError.noInternetConnection)
+                        return
+                    }
+                    else {
+                        errorHandler(AppError.other(rawError: error))
+                    }
                 }
+                //Optional (for printing data)
+                if let dataStr = String(data: data, encoding: .utf8){
+                    print(dataStr)
+                }
+                completionHandler(data)
             }
             }.resume()
     }

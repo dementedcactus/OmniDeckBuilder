@@ -11,26 +11,15 @@ import XCTest
 
 class OmniDeckBuilderTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testJobAPIConnection() {
+        let cardResultsExpectation = XCTestExpectation(description: "Card results exist")
+        //start network request
+        var cards = [Card]()
+        //JobsAPIClient.manager.getAllOnlineJobs(completionHandler: { cards = $0 ; cardResultsExpectation.fulfill()}, errorHandler: {print($0)})
+        CardAPIClient.manager.getCards(matching: "Goblin", completionHandler: { cards = $0 ; cardResultsExpectation.fulfill()}, errorHandler: {print($0)})
+        //wait 10 seconds for results because it's async
+        wait(for: [cardResultsExpectation], timeout: 10)
+        XCTAssertGreaterThan(cards.count, 0, "Cards are coming back from MTG Online")
     }
     
 }
