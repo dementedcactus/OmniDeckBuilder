@@ -36,7 +36,7 @@ enum Stylesheet {
     }
     
     enum Fonts {
-        static let AppName = UIFont(name: "HelveticaNeue-Light", size: 40.0)
+        static let AppName = UIFont(name: "HelveticaNeue-Medium", size: 40.0)
         static let PostTitle = UIFont(name: "HelveticaNeue-CondensedBold", size: 25.0)
         static let Regular = UIFont(name: "HelveticaNeue-Light", size: 20.0)
         static let Date = UIFont(name: "HelveticaNeue-Light", size: 15.0)
@@ -79,7 +79,7 @@ extension Stylesheet {
                     imageView.layer.borderColor = (Stylesheet.Colors.Dark).cgColor
                 case .Opaque:
                     imageView.backgroundColor = UIColor(red: 0.298, green: 0.278, blue: 0.247, alpha: 1.00)
-                    imageView.contentMode = .scaleAspectFit
+                    imageView.contentMode = .scaleAspectFill
                 }
             }
         }

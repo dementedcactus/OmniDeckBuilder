@@ -9,10 +9,11 @@
 import UIKit
 
 class LoginView: UIView {
-
+    
     lazy var loginImageView: UIImageView = {
         let iv = UIImageView()
-        iv.image = UIImage(named: "BlackPanther")
+        iv.image = UIImage(named: "NicolBolasTheDeceiver")
+        //http://www.artofmtg.com/art/nicol-bolas-the-deceiver/
         iv.layer.borderWidth = CGFloat(Stylesheet.BorderWidths.FunctionButtons)
         Stylesheet.Objects.ImageViews.Opaque.style(imageView: iv)
         return iv
@@ -20,30 +21,12 @@ class LoginView: UIView {
     
     lazy var titleLabel: UILabel = {
         let stl = UILabel()
-        stl.text = "Wakanda Hyper Information Program"
+        stl.text = "OMNI DeckBuilder"
         Stylesheet.Objects.Labels.AppName.style(label: stl)
         stl.backgroundColor = UIColor(white: 1, alpha: 0.03)
         stl.alpha = 0 // for animation
         
         return stl
-    }()
-    
-    lazy var facebookSignInButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("FaceBook (Coming Soon)", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = UIColor(red: 0.263, green: 0.353, blue: 0.576, alpha: 1.00)
-        button.alpha = 0 // for animation
-        return button
-    }()
-    
-    lazy var twitterSignInButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Twitter (Coming Soon)", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = UIColor(red: 0.325, green: 0.690, blue: 0.875, alpha: 1.00)
-        button.alpha = 0 // for animation
-        return button
     }()
     
     lazy var emailTextField: UITextField = {
@@ -89,7 +72,7 @@ class LoginView: UIView {
     
     lazy var emailIconImageView: UIImageView = {
         let iv = UIImageView()
-        iv.backgroundColor = .white
+        iv.backgroundColor = UIColor(white: 1, alpha: 0.03)
         iv.image = UIImage(named: "email")
         iv.contentMode = .scaleAspectFit
         iv.layer.shadowColor = UIColor.gray.cgColor
@@ -102,7 +85,7 @@ class LoginView: UIView {
     
     lazy var passwordIconImageView: UIImageView = {
         let iv = UIImageView()
-        iv.backgroundColor = .white
+        iv.backgroundColor = UIColor(white: 1, alpha: 0.03)
         iv.image = UIImage(named: "lock")
         iv.contentMode = .scaleAspectFit
         iv.layer.shadowColor = UIColor.gray.cgColor
@@ -163,8 +146,6 @@ class LoginView: UIView {
     private func setupObjectsAndViews() {
         setupLoginImageView()
         setupTitleLabel()
-        setupFacebookSignInButton()
-        setupTwitterSignInButton()
         setupEmailIconImageView()
         setupEmailTextField()
         setupPasswordIconImageView()
@@ -175,120 +156,85 @@ class LoginView: UIView {
     }
     
     private func setupLoginImageView() {
-        //        addSubview(loginImageView)
-        
+        addSubview(loginImageView)
+        loginImageView.translatesAutoresizingMaskIntoConstraints = false
+        loginImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        loginImageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        loginImageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        loginImageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
     private func setupTitleLabel() {
-        //        addSubview(titleLabel)
-        
-    }
-    private func setupFacebookSignInButton() {
-        //        addSubview(facebookSignInButton)
-        
-    }
-    private func setupTwitterSignInButton() {
-        //        addSubview(twitterSignInButton)
-        
+        addSubview(titleLabel)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        titleLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        titleLabel.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.9).isActive = true
     }
     private func setupEmailIconImageView() {
-        //        addSubview(emailIconImageView)
-        
-    }
-    private func setupEmailTextField() {
-        //        addSubview(emailTextField)
-        
+        addSubview(emailIconImageView)
+        emailIconImageView.translatesAutoresizingMaskIntoConstraints = false
+        emailIconImageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
+        emailIconImageView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 40).isActive = true
+        emailIconImageView.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: 0.1).isActive = true
+        emailIconImageView.heightAnchor.constraint(equalTo: emailIconImageView.widthAnchor).isActive = true
     }
     private func setupPasswordIconImageView() {
-        //        addSubview(passwordIconImageView)
-        
+        addSubview(passwordIconImageView)
+        passwordIconImageView.translatesAutoresizingMaskIntoConstraints = false
+        passwordIconImageView.topAnchor.constraint(equalTo: emailIconImageView.bottomAnchor, constant: 5).isActive = true
+        passwordIconImageView.leadingAnchor.constraint(equalTo: emailIconImageView.leadingAnchor).isActive = true
+        passwordIconImageView.widthAnchor.constraint(equalTo: emailIconImageView.widthAnchor).isActive = true
+        passwordIconImageView.heightAnchor.constraint(equalTo: emailIconImageView.heightAnchor).isActive = true
+    }
+    private func setupEmailTextField() {
+        addSubview(emailTextField)
+        emailTextField.translatesAutoresizingMaskIntoConstraints = false
+        emailTextField.topAnchor.constraint(equalTo: emailIconImageView.topAnchor).isActive = true
+        emailTextField.leadingAnchor.constraint(equalTo: emailIconImageView.trailingAnchor).isActive = true
+        emailTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -40).isActive = true
+        emailTextField.heightAnchor.constraint(equalTo: emailIconImageView.heightAnchor).isActive = true
     }
     private func setupPasswordTextField() {
-        //        addSubview(passwordTextField)
-        
+        addSubview(passwordTextField)
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.topAnchor.constraint(equalTo: passwordIconImageView.topAnchor).isActive = true
+        passwordTextField.leadingAnchor.constraint(equalTo: passwordIconImageView.trailingAnchor).isActive = true
+        passwordTextField.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -40).isActive = true
+        passwordTextField.heightAnchor.constraint(equalTo: passwordIconImageView.heightAnchor).isActive = true
     }
     private func setupSignInButton() {
-        //        addSubview(signInButton)
-        
+        addSubview(signInButton)
+        signInButton.translatesAutoresizingMaskIntoConstraints = false
+        signInButton.topAnchor.constraint(equalTo: passwordIconImageView.bottomAnchor, constant: 10).isActive = true
+        signInButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        signInButton.leadingAnchor.constraint(equalTo: passwordIconImageView.leadingAnchor).isActive = true
+        signInButton.trailingAnchor.constraint(equalTo: passwordTextField.trailingAnchor).isActive = true
     }
     private func setupCreateAccountButton() {
-        //        addSubview(createAccountButton)
-        
+        addSubview(createAccountButton)
+        createAccountButton.translatesAutoresizingMaskIntoConstraints = false
+        createAccountButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 10).isActive = true
+        createAccountButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        createAccountButton.widthAnchor.constraint(equalTo: signInButton.widthAnchor).isActive = true
     }
     private func setupForgotPasswordButton() {
-        //        addSubview(forgotPasswordButton)
-        
+        addSubview(forgotPasswordButton)
+        forgotPasswordButton.translatesAutoresizingMaskIntoConstraints = false
+        forgotPasswordButton.topAnchor.constraint(equalTo: createAccountButton.bottomAnchor, constant: 10).isActive = true
+        forgotPasswordButton.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        forgotPasswordButton.widthAnchor.constraint(equalTo: signInButton.widthAnchor).isActive = true
+    }
+    public func animateView() {
+        UIView.animate(withDuration: 2) {
+            self.titleLabel.alpha = 1
+            self.emailIconImageView.alpha = 1
+            self.emailTextField.alpha = 1
+            self.passwordIconImageView.alpha = 1
+            self.passwordTextField.alpha = 1
+            self.signInButton.alpha = 1
+            self.createAccountButton.alpha = 1
+            self.forgotPasswordButton.alpha = 1
+        }
     }
     
-//        loginImageView.snp.makeConstraints { (make) in
-//            make.edges.equalTo(self.safeAreaLayoutGuide.snp.edges)
-//        }
-//
-//        titleLabel.snp.makeConstraints { (make) in
-//            make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(20)
-//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(0.9)
-//        }
-//
-//        facebookSignInButton.snp.makeConstraints { (make) in
-//            make.centerY.equalTo(self.safeAreaLayoutGuide.snp.centerY).multipliedBy(1.8)
-//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(0.8)
-//            make.height.equalTo(self.safeAreaLayoutGuide.snp.height).multipliedBy(0.08)
-//        }
-//
-//        twitterSignInButton.snp.makeConstraints { (make) in
-//            make.bottom.equalTo(facebookSignInButton.snp.top).offset(-10)
-//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-//            make.width.height.equalTo(facebookSignInButton)
-//        }
-//
-//        emailIconImageView.snp.makeConstraints { (make) in
-//            make.top.equalTo(titleLabel.snp.bottom).offset(20)
-//            make.leading.equalTo(self.safeAreaLayoutGuide.snp.leading).offset(40)
-//            make.width.equalTo(self.safeAreaLayoutGuide.snp.width).multipliedBy(0.1)
-//            make.height.equalTo(emailIconImageView.snp.width)
-//        }
-//
-//        passwordIconImageView.snp.makeConstraints { (make) in
-//            make.top.equalTo(emailIconImageView.snp.bottom).offset(5)
-//            make.leading.equalTo(emailIconImageView)
-//            make.width.equalTo(emailIconImageView)
-//            make.height.equalTo(emailIconImageView)
-//        }
-//
-//        emailTextField.snp.makeConstraints { (make) in
-//            make.top.equalTo(emailIconImageView)
-//            make.leading.equalTo(emailIconImageView.snp.trailing)
-//            make.trailing.equalTo(self.safeAreaLayoutGuide.snp.trailing).offset(-40)
-//            make.height.equalTo(emailIconImageView)
-//        }
-//
-//        passwordTextField.snp.makeConstraints { (make) in
-//            make.top.equalTo(passwordIconImageView)
-//            make.leading.equalTo(passwordIconImageView.snp.trailing)
-//            make.trailing.equalTo(self.safeAreaLayoutGuide.snp.trailing).offset(-40)
-//            make.height.equalTo(passwordIconImageView)
-//        }
-//
-//        signInButton.snp.makeConstraints { (make) in
-//            make.top.equalTo(passwordIconImageView.snp.bottom).offset(10)
-//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-//            make.leading.equalTo(passwordIconImageView.snp.leading)
-//            make.trailing.equalTo(passwordTextField.snp.trailing)
-//        }
-//
-//        createAccountButton.snp.makeConstraints { (make) in
-//            make.top.equalTo(signInButton.snp.bottom).offset(10)
-//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-//            make.width.equalTo(signInButton.snp.width)
-//        }
-//
-//        forgotPasswordButton.snp.makeConstraints { (make) in
-//            make.top.equalTo(createAccountButton.snp.bottom).offset(10)
-//            make.centerX.equalTo(self.safeAreaLayoutGuide.snp.centerX)
-//            make.width.equalTo(signInButton.snp.width)
-//        }
-//
-
-
 }

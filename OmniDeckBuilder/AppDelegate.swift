@@ -22,9 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Database.database().isPersistenceEnabled = true
         
         let loginVC = LoginVC()
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = loginVC
-        window?.makeKeyAndVisible()
+                let navController = UINavigationController(rootViewController: loginVC)
+                window = UIWindow(frame: UIScreen.main.bounds)
+                window?.rootViewController = navController
+                window?.makeKeyAndVisible()
         return true
     }
 

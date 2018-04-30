@@ -11,43 +11,18 @@ import UIKit
 class LoginVC: UIViewController {
 
     let loginView = LoginView()
-    //let mainFeedVC = MainFeedVC()
     let createAccountVC = CreateAccountVC()
     let tabBarVC = TabBarVC()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         loginView.emailTextField.delegate = self
         loginView.passwordTextField.delegate = self
         loginView.signInButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
         loginView.createAccountButton.addTarget(self, action: #selector(createAccountButtonPressed), for: .touchUpInside)
         loginView.forgotPasswordButton.addTarget(self, action: #selector(resetPassword), for: .touchUpInside)
-        loginView.facebookSignInButton.addTarget(self, action: #selector(facebookButtonPressed), for: .touchUpInside)
-        loginView.twitterSignInButton.addTarget(self, action: #selector(twitterButtonPressed), for: .touchUpInside)
-        
         setupViews()
-        animateView()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    private func animateView() {
-        UIView.animate(withDuration: 2) {
-            self.loginView.titleLabel.alpha = 1
-            self.loginView.facebookSignInButton.alpha = 1
-            self.loginView.twitterSignInButton.alpha = 1
-            self.loginView.emailIconImageView.alpha = 1
-            self.loginView.emailTextField.alpha = 1
-            self.loginView.passwordIconImageView.alpha = 1
-            self.loginView.passwordTextField.alpha = 1
-            self.loginView.signInButton.alpha = 1
-            self.loginView.createAccountButton.alpha = 1
-            self.loginView.forgotPasswordButton.alpha = 1
-        }
+        loginView.animateView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,25 +68,14 @@ class LoginVC: UIViewController {
             self.present(alert, animated: true, completion: nil)
             return
         }
-        
         let email = loginView.emailTextField.text
         let password = loginView.passwordTextField.text
-        
         AuthUserService.manager.delegate = self
         AuthUserService.manager.login(withEmail: email!, andPassword: password!)
-        
-    }
-    
-    @objc func twitterButtonPressed() {
-        print("Twitter Button Pressed")
-    }
-    
-    @objc func facebookButtonPressed() {
-        print("Facebook Button Pressed")
     }
     
     @objc func createAccountButtonPressed() {
-        navigationController?.pushViewController(createAccountVC, animated: false)
+        navigationController?.pushViewController(createAccountVC, animated: true)
     }
     
     @objc func resetPassword() {
@@ -168,7 +132,6 @@ extension LoginVC: UITextFieldDelegate {
             // makes the entered text into secret password form
             textField.isSecureTextEntry = true
         }
-        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -196,10 +159,4 @@ extension LoginVC: AuthUserServiceDelegate {
         Alert.addAction(withTitle: "OK", style: .default, andHandler: nil, to: alert)
         self.present(alert, animated: true, completion: nil)
     }
-
-    
-    
-    
-    
-    
 }
